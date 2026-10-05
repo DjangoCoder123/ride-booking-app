@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-(rk-o&=an0girjz3$9_02#%cqd)m502wbh746)r6kjb(tg2^5n
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['10.0.0.83', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['10.0.0.83', 'localhost', '127.0.0.1', 'ride-booking-app-yxms.onrender.com']
 
 
 # Application definition
