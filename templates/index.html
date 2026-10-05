@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride Booking - Home</title>
+    <style>
+        /* Consistent brand design tokens */
+        :root {
+            --primary: #111111;
+            --vip-gold: #b38f00;
+            --bg: #f8f9fa;
+            --card-bg: #ffffff;
+            --text: #333333;
+            --border: #e9ecef;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 80px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .hub-container {
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: 800;
+            color: var(--primary);
+            margin: 0 0 10px 0;
+            letter-spacing: -0.5px;
+        }
+
+        .tagline {
+            font-size: 16px;
+            color: #666666;
+            margin-bottom: 40px;
+        }
+
+        h3 {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #888888;
+            margin-bottom: 20px;
+            text-align: left;
+            padding-left: 5px;
+        }
+
+        /* Card menu container links stack */
+        .menu-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .menu-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px 25px;
+            text-align: left;
+            text-decoration: none;
+            color: var(--text);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+        }
+
+        .menu-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+            border-color: var(--primary);
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 4px;
+        }
+
+        .card-desc {
+            font-size: 14px;
+            color: #6c757d;
+        }
+
+        /* Subtle indicator arrow element */
+        .arrow {
+            font-size: 20px;
+            color: #cccccc;
+            transition: transform 0.2s ease;
+        }
+
+        .menu-card:hover .arrow {
+            color: var(--primary);
+            transform: translateX(4px);
+        }
+
+        /* Highlight feature block styling */
+        .menu-card.featured {
+            border-left: 4px solid var(--vip-gold);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hub-container">
+        <h1>Ride Booking</h1>
+        <p class="tagline">Safe, reliable, and premium transportation service</p>
+
+        <h3>Explore Platform</h3>
+        <div class="menu-stack">
+
+            <!-- Book a Ride Card -->
+            <a href="/book/" class="menu-card featured">
+                <div>
+                    <div class="card-title">Book a Ride</div>
+                    <div class="card-desc">Reserve your ride instantly or become a premium VIP member.</div>
+                </div>
+                <div class="arrow">&rarr;</div>
+            </a>
+
+            <!-- View Fees Card -->
+            <a href="/fees/" class="menu-card">
+                <div>
+                    <div class="card-title">Rates &amp; Fees</div>
+                    <div class="card-desc">Check transparent flat rates between Ottawa, Toronto, and Montreal.</div>
+                </div>
+                <div class="arrow">&rarr;</div>
+            </a>
+
+            <!-- About Card -->
+            <a href="/about/" class="menu-card">
+                <div>
+                    <div class="card-title">About Us</div>
+                    <div class="card-desc">Learn more about our team, vehicle standards, and service vision.</div>
+                </div>
+                <div class="arrow">&rarr;</div>
+            </a>
+
+        </div>
+    </div>
+
+</body>
+</html>
