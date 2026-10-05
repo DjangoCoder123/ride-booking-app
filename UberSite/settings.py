@@ -149,3 +149,6 @@ MAILERS = {
 
 DEFAULT_FROM_EMAIL = 'Ride Booking System <basophil2025@outlook.com>'
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://ride-booking-app-yxms.onrender.com',
+]
